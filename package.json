@@ -1,0 +1,15 @@
+{
+  "name": "com.greengreysoftworks.adnetworksdk",
+  "displayName": "AdNetworkSDK",
+  "version": "1.0.1",
+  "unity": "2019.1",
+  "description": "Package for ad integration",
+  "type": "library",
+  "samples": [
+        {
+            "displayName": "LazyLoad Sample",
+            "description": "Contains LazyLoad usage example",
+            "path": "Samples~/LazyLoadExample"
+        }
+  ]
+}
