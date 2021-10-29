@@ -24,7 +24,7 @@
 ```
   "dependencies": {
     ...,
-    "com.greengreysoftworks.dmpanalytics": "https://ghp_sroeYEp9kOATCW3kQdzIpcs0jS5JTm07vHK@github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#v1.0.1"
+    "com.greengreysoftworks.adnetworksdk": "https://ghp_sroeYEp9kOATCW3kQdzIpcs0jS5JTm07vHK@github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#v1.0.1"
   }
 ```
 
