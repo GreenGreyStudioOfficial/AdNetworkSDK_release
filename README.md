@@ -1,32 +1,40 @@
-# AdNetworkSDK
-## Необходимые данные для подключения библиотеки
-Токен авторизации для доступа к github репозиторию (далее <github_api_token>).
+# Green Grey Ad Network SDK for Unity
 
-> Пример:
->
-> ghp_sroeYEp9kOATCW3kQdzIpcs0jS5JTm07vHK
+## Текущая версия
+1.0.5
 
-## Добавление библиотеки в проект
-Добавление библиотеки возможно из приватного репозитория в пространстве GreenGreyStudioOfficial. Адрес состоит из трех частей:
+## 0. Что понадобится для интеграции?
+**GAME_ID** - идентификатор приложения в системе показа рекламы
 
-- <github_api_token>
-- путь до репозитория Github
-- текущая версия библиотеки (ссылка на git tag релизного коммита)
+**AD_SERVER_HOST** - адрес сервера рекламы
 
-> Пример:
->
-> https://<**github_api_token**>@github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#v<**current_version**>
+Их вы можете получить у менеджера Green Grey
 
-Чтобы добавить зависимость в проект, нужно открыть **PROJECT_DIR/Packages/manifest.json** текущего проекта и добавить строчку в раздел "dependencies"
 
-Пример:
+## 1. Добавление в проект
+1.1 В панели Package Manager выберите "Add package from git URL"
+
+![Add package to project](/.readme/add_package_from_git.png)
+
+1.2 В открывшемся окне вставьте ссылку https://github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#v1.0.5
+
+1.3 Для загрузки примера использования нужно в панели Package Manager выбрать AdNetworkSDK, в правой части развернуть список примеров и нажать кнопку “Import”
+
+![Import samples](/.readme/import_samples.png)
+
+1.4 После этого в проект будет добавлен пример использования SDK. Для его запуска необходимо прописать имеющиеся идентификаторы GAME_ID и AD_SERVER_HOST в верхней части файла LazyLoadExampleListener:
+
 
 ```
-  "dependencies": {
-    ...,
-    "com.greengreysoftworks.adnetworksdk": "https://ghp_sroeYEp9kOATCW3kQdzIpcs0jS5JTm07vHK@github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#v1.0.1"
-  }
+namespace GGADSDK.Samples.LazyLoadExample.Scripts
+{
+   public class LazyLoadExampleListener : MonoBehaviour, IAdInitializationListener, IAdLoadListener, IAdShowListener
+   {
+       private const string MY_GAME_ID = "MY_GAME_ID";
+       private const string AD_SERVER_HOST = "AD_SERVER_HOST";
+
 ```
 
-## Использование библиотеки
-Всю информацию по использованию библиотеки смотрите в [документации](https://greengrey.atlassian.net/wiki/spaces/DEV/pages/183795734/GreenGrey.AdNetworkSDK)
+
+## 2. Дальнейшие шаги
+Чтобы ознакомиться с подробностями устройства библиотеки и получить справку о работе отдельных методов можно в [документации на внутреннем портале](https://greengrey.atlassian.net/wiki/spaces/DEV/pages/183795734/GreenGrey.AdNetworkSDK)
