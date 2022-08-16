@@ -14,7 +14,7 @@
 
 ![Add package to project](/.readme/add_package_from_git.png)
 
-1.2 В открывшемся окне вставьте ссылку https://github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#v1.1.1
+1.2 В открывшемся окне вставьте ссылку https://github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#1.1.1
 
 1.3 Для загрузки примера использования нужно в панели Package Manager выбрать AdNetworkSDK, в правой части развернуть список примеров и нажать кнопку “Import”
 
