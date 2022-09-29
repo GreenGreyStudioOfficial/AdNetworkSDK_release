@@ -101,9 +101,9 @@ namespace GGADSDK.Samples.LoadExample.Scripts
             m_showButton.interactable = false;
         }
 
-        public void OnShowComplete(AdType _adType, ShowCompletionState _showCompletionState, string _validationId)
+        public void OnShowComplete(AdType _adType, ShowCompletionState _showCompletionState, string _platformId, string _validationId)
         {
-            Debug.Log($"Show [{_adType}]: Show completed with [{_showCompletionState}] complete state\nValidationId: {_validationId}");
+            Debug.Log($"Show [{_adType}]: Show completed with [{_showCompletionState}] complete state\nValidationId: {_validationId}\nPlatformId: {_platformId}");
         }
 
         public void OnShowError(AdType _adType, ShowErrorType _error, string _errorMessage)

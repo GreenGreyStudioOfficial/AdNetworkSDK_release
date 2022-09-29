@@ -18,7 +18,7 @@ namespace GGADSDK.Samples.ApplovinExample.Scripts.Connectors.Applovin
         /// <summary>
         /// Айди applovin
         /// </summary>
-        private const string APPLOVIN = "applovin";
+        private const string APPLOVIN_ID = "applovin";
         
         /// <summary>
         /// Applovin sdk key
@@ -178,7 +178,7 @@ namespace GGADSDK.Samples.ApplovinExample.Scripts.Connectors.Applovin
 
         public string GetSdkId()
         {
-            return APPLOVIN;
+            return APPLOVIN_ID;
         }
 
         #endregion
@@ -353,7 +353,7 @@ namespace GGADSDK.Samples.ApplovinExample.Scripts.Connectors.Applovin
         {
             var closeStatus = ShowCompletionState.SHOW_COMPLETE_BY_CLOSE_BUTTON;
             if (m_showListeners.ContainsKey(_placementId))
-                m_showListeners[_placementId].OnShowComplete(AdType.INTERSTITIAL, closeStatus, null);
+                m_showListeners[_placementId].OnShowComplete(AdType.INTERSTITIAL, closeStatus,  APPLOVIN_ID, null);
         }
 
         #endregion
@@ -391,7 +391,7 @@ namespace GGADSDK.Samples.ApplovinExample.Scripts.Connectors.Applovin
                 ? ShowCompletionState.SHOW_COMPLETE_BY_CLOSE_BUTTON
                 : ShowCompletionState.SHOW_COMPLETE_BY_SKIP_BUTTON;
             if (m_showListeners.ContainsKey(_placementId))
-                m_showListeners[_placementId].OnShowComplete(AdType.REWARDED, closeStatus, null);
+                m_showListeners[_placementId].OnShowComplete(AdType.REWARDED, closeStatus, APPLOVIN_ID, null);
         }
         
         private void OnRewardedAdReceivedRewardEvent(string _placementId, MaxSdk.Reward _reward, MaxSdkBase.AdInfo _adInfo)

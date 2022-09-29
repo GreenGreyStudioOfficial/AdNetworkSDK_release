@@ -169,10 +169,11 @@ namespace GGADSDK.Samples.ApplovinExample.Scripts
         /// </summary>
         /// <param name="_adType">Creative type</param>
         /// <param name="_showCompletionState">Complete status. Skipped or closed</param>
+        /// <param name="_platformId">Platform id for validation creative show status.</param>
         /// <param name="_validationId">Id for validation creative show status. Can be null</param>
-        public void OnShowComplete(AdType _adType, ShowCompletionState _showCompletionState, string _validationId)
+        public void OnShowComplete(AdType _adType, ShowCompletionState _showCompletionState, string _platformId, string _validationId)
         {
-            Debug.Log($"Show {_adType} complete");
+            Debug.Log($"Show {_adType} complete with [{_showCompletionState}] complete state\nValidationId: {_validationId}\nPlatformId: {_platformId}");
         }
 
         /// <summary>
