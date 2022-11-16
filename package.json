@@ -1,7 +1,7 @@
 {
   "name": "com.greengreysoftworks.adnetworksdk",
   "displayName": "AdNetworkSDK",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "unity": "2019.1",
   "description": "Package for ad integration",
   "type": "library",
