@@ -1,7 +1,7 @@
 # Green Grey Ad Network SDK for Unity
 
 ## Текущая версия
-1.2.7
+1.2.6
 
 ## 0. Что понадобится для интеграции? 
 **GAME_ID** - идентификатор приложения в системе показа рекламы
@@ -14,7 +14,7 @@
 
 ![Add package to project](/.readme/add_package_from_git.png)
 
-1.2 В открывшемся окне вставьте ссылку https://github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#1.2.7
+1.2 В открывшемся окне вставьте ссылку https://github.com/GreenGreyStudioOfficial/AdNetworkSDK_release.git#1.2.6
 
 1.3 Для загрузки примера использования нужно в панели Package Manager выбрать AdNetworkSDK, в правой части развернуть список примеров и нажать кнопку “Import”
 
