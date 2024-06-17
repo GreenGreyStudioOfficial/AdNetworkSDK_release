@@ -171,6 +171,18 @@ namespace GGADSDK.Samples.ApplovinExample.Scripts.Connectors.Applovin
             }
         }
 
+        public void HideBanner(IAdShowListener _listener, string _placementId)
+        {
+            if (_placementId == null)
+            {
+                _listener.OnShowError(AdType.BANNER, ShowErrorType.THIRD_PARTY_CONNECTOR_ERROR,
+                    "PlacementId required. Get AD_UNIT_ID in your applovin");
+                return;
+            }
+            
+            MaxSdk.HideBanner(_placementId);
+        }
+
         public List<AdType> GetSupportedAdTypes()
         {
             return m_supportedAdTypes;

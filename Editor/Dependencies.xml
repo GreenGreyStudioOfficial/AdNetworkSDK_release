@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies>
+    <androidPackages>
+        <repositories>
+            <repository>https://nexus.ggsinternal.space/repository/maven-public-hosted</repository>
+        </repositories>
+        <androidPackage spec="com.greengray:advsdk:1.0.57"/>
+    </androidPackages>
+</dependencies>
