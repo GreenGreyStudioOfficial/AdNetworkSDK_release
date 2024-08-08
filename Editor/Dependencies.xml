@@ -3,7 +3,8 @@
     <androidPackages>
         <repositories>
             <repository>https://nexus.ggsinternal.space/repository/maven-public-hosted</repository>
+            <repository>https://developer.huawei.com/repo</repository>
         </repositories>
-        <androidPackage spec="com.greengray:advsdk:1.0.57"/>
+        <androidPackage spec="com.greengray:advsdk:1.0.63"/>
     </androidPackages>
 </dependencies>
