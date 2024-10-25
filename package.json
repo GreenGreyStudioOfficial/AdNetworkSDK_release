@@ -1,7 +1,7 @@
 {
   "name": "com.greengreysoftworks.adnetworksdk",
   "displayName": "AdNetworkSDK",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "unity": "2019.1",
   "description": "Package for mobidriven ad integration",
   "type": "library",
