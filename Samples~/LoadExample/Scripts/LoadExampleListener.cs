@@ -110,7 +110,7 @@ namespace GGADSDK.Samples.LoadExample.Scripts
         {
             Debug.LogError($"Show [{_adType}]: failed with error [{_error}]: {_errorMessage}");
         }
-        
+
         #endregion
     }
 }

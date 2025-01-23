@@ -5,6 +5,6 @@
             <repository>https://nexus.ggsinternal.space/repository/maven-public-hosted</repository>
             <repository>https://developer.huawei.com/repo</repository>
         </repositories>
-        <androidPackage spec="com.greengray:advsdk:1.0.71"/>
+        <androidPackage spec="com.greengray:advsdk:1.0.9"/>
     </androidPackages>
 </dependencies>
